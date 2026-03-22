@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply bg-stone-50 text-stone-950 font-sans;
+    min-height: 100vh;
+  }
+
+  #root {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-stone-950;
+  }
+
+  ::selection {
+    @apply bg-stone-950 text-stone-50;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@layer components {
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 bg-stone-950 text-stone-50 text-sm font-medium rounded-xl transition-all duration-200 hover:bg-stone-800 active:scale-[0.98] disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 bg-transparent text-stone-950 text-sm font-medium border border-stone-950 rounded-xl transition-all duration-200 hover:bg-stone-950 hover:text-stone-50 active:scale-[0.98] disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 px-4 py-2 bg-transparent text-stone-600 text-sm font-medium rounded-lg transition-all duration-200 hover:text-stone-950 hover:bg-stone-100 active:scale-[0.98];
+  }
+
+  .input-base {
+    @apply w-full px-4 py-3 bg-white border border-stone-200 text-stone-950 text-sm placeholder:text-stone-400 focus:outline-none focus:border-stone-950 transition-colors duration-200 rounded-lg;
+  }
+
+  .card {
+    @apply bg-white border border-stone-100 rounded-2xl;
+  }
+
+  .section-title {
+    @apply text-3xl sm:text-4xl font-bold tracking-tight text-stone-950;
+  }
+
+  .section-subtitle {
+    @apply text-stone-500 text-base leading-relaxed;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f5f5f4;
+}
+::-webkit-scrollbar-thumb {
+  background: #a8a29e;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #78716c;
+}

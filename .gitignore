@@ -1,0 +1,109 @@
+# =============================================================================
+# ShopCraft — Nairobi E-Commerce PWA
+# .gitignore — Root (covers both client/ and server/)
+# =============================================================================
+
+
+# =============================================================================
+# ENVIRONMENT & SECRETS — NEVER COMMIT THESE
+# =============================================================================
+.env
+.env.local
+.env.development
+.env.development.local
+.env.test
+.env.test.local
+.env.production
+.env.production.local
+.env.staging
+.env.*
+
+# Secret / key files
+*.key
+*.pem
+*.crt
+*.cer
+*.p12
+*.pfx
+secrets.json
+config/secrets.*
+*.secret
+
+
+# =============================================================================
+# NODE
+# =============================================================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+.pnpm-store/
+.npm/
+.yarn/
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+
+# =============================================================================
+# BUILD OUTPUT
+# =============================================================================
+dist/
+build/
+out/
+.next/
+.nuxt/
+.output/
+.cache/
+coverage/
+*.tsbuildinfo
+logs/
+*.log
+log/
+server/uploads/
+uploads/
+tmp/
+temp/
+*.sqlite
+*.sqlite3
+*.db
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+*~
+.project
+.classpath
+.settings/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+coverage/
+.nyc_output/
+test-results/
+playwright-report/
+*.lcov
+client/dist/
+sw.js
+workbox-*.js
+.claude/
+*.local
+.vercel
+.netlify
+.serverless/
+.terraform/
