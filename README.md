@@ -27,22 +27,6 @@ cd server
 npm install
 ```
 
-Copy the example env file and fill in your values:
-
-```bash
-cp .env.example .env
-```
-
-**.env values:**
-
-```
-PORT=5000
-MONGODB_URI=mongodb://localhost:27017/ecommerce_pwa
-JWT_SECRET=your_super_secret_jwt_key_change_in_production_min_32_chars
-JWT_EXPIRE=7d
-CLIENT_URL=http://localhost:5173
-NODE_ENV=development
-```
 
 ### 2. Client
 
@@ -72,24 +56,6 @@ npm run dev
 ```
 
 Client runs on **http://localhost:5173**
-
----
-
-## Seed the Database
-
-Populate the database with 12 sample products and two test users:
-
-```bash
-cd server
-npm run seed
-```
-
-**Demo credentials:**
-
-| Role  | Email                  | Password      |
-|-------|------------------------|---------------|
-| User  | user@shopcraft.com     | user123456    |
-| Admin | admin@shopcraft.com    | admin123456   |
 
 ---
 
