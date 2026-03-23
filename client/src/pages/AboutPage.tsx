@@ -10,8 +10,8 @@ const values = [
 
 const team = [
   { name: 'Jemima Kibandi', role: 'Founder & CEO', img: 'https://picsum.photos/seed/person1/200/200' },
-  { name: 'Brian Odhiambo', role: 'Head of Operations', img: 'https://picsum.photos/seed/person2/200/200' },
-  { name: 'Amina Hassan', role: 'Head of Design', img: 'https://picsum.photos/seed/person3/200/200' },
+  { name: 'Betty Wangui', role: 'Head of Operations', img: 'https://picsum.photos/seed/person2/200/200' },
+  { name: 'Njoki Kibandi', role: 'Head of Finance', img: 'https://picsum.photos/seed/person3/200/200' },
 ];
 
 const stagger = { animate: { transition: { staggerChildren: 0.1 } } };
